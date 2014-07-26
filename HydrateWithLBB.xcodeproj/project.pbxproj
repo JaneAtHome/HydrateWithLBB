@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B6A67C73198314DD00F1FA9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A67C72198314DD00F1FA9C /* Foundation.framework */; };
+		B6A67C75198314DD00F1FA9C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A67C74198314DD00F1FA9C /* CoreGraphics.framework */; };
+		B6A67C77198314DD00F1FA9C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A67C76198314DD00F1FA9C /* UIKit.framework */; };
+		B6A67C7D198314DD00F1FA9C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6A67C7B198314DD00F1FA9C /* InfoPlist.strings */; };
+		B6A67C7F198314DD00F1FA9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A67C7E198314DD00F1FA9C /* main.m */; };
+		B6A67C83198314DD00F1FA9C /* HydrateWithLBBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A67C82198314DD00F1FA9C /* HydrateWithLBBAppDelegate.m */; };
+		B6A67C86198314DD00F1FA9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6A67C84198314DD00F1FA9C /* Main.storyboard */; };
+		B6A67C89198314DD00F1FA9C /* HydrateWithLBBFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A67C88198314DD00F1FA9C /* HydrateWithLBBFirstViewController.m */; };
+		B6A67C8C198314DD00F1FA9C /* HydrateWithLBBSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A67C8B198314DD00F1FA9C /* HydrateWithLBBSecondViewController.m */; };
+		B6A67C8E198314DD00F1FA9C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6A67C8D198314DD00F1FA9C /* Images.xcassets */; };
+		B6A67C95198314DD00F1FA9C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A67C94198314DD00F1FA9C /* XCTest.framework */; };
+		B6A67C96198314DD00F1FA9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A67C72198314DD00F1FA9C /* Foundation.framework */; };
+		B6A67C97198314DD00F1FA9C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A67C76198314DD00F1FA9C /* UIKit.framework */; };
+		B6A67C9F198314DD00F1FA9C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6A67C9D198314DD00F1FA9C /* InfoPlist.strings */; };
+		B6A67CA1198314DD00F1FA9C /* HydrateWithLBBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A67CA0198314DD00F1FA9C /* HydrateWithLBBTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B6A67C98198314DD00F1FA9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6A67C67198314DD00F1FA9C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6A67C6E198314DD00F1FA9C;
+			remoteInfo = HydrateWithLBB;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B6A67C6F198314DD00F1FA9C /* HydrateWithLBB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HydrateWithLBB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6A67C72198314DD00F1FA9C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B6A67C74198314DD00F1FA9C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B6A67C76198314DD00F1FA9C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B6A67C7A198314DD00F1FA9C /* HydrateWithLBB-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HydrateWithLBB-Info.plist"; sourceTree = "<group>"; };
+		B6A67C7C198314DD00F1FA9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B6A67C7E198314DD00F1FA9C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6A67C80198314DD00F1FA9C /* HydrateWithLBB-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HydrateWithLBB-Prefix.pch"; sourceTree = "<group>"; };
+		B6A67C81198314DD00F1FA9C /* HydrateWithLBBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HydrateWithLBBAppDelegate.h; sourceTree = "<group>"; };
+		B6A67C82198314DD00F1FA9C /* HydrateWithLBBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HydrateWithLBBAppDelegate.m; sourceTree = "<group>"; };
+		B6A67C85198314DD00F1FA9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B6A67C87198314DD00F1FA9C /* HydrateWithLBBFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HydrateWithLBBFirstViewController.h; sourceTree = "<group>"; };
+		B6A67C88198314DD00F1FA9C /* HydrateWithLBBFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HydrateWithLBBFirstViewController.m; sourceTree = "<group>"; };
+		B6A67C8A198314DD00F1FA9C /* HydrateWithLBBSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HydrateWithLBBSecondViewController.h; sourceTree = "<group>"; };
+		B6A67C8B198314DD00F1FA9C /* HydrateWithLBBSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HydrateWithLBBSecondViewController.m; sourceTree = "<group>"; };
+		B6A67C8D198314DD00F1FA9C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B6A67C93198314DD00F1FA9C /* HydrateWithLBBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HydrateWithLBBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6A67C94198314DD00F1FA9C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B6A67C9C198314DD00F1FA9C /* HydrateWithLBBTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HydrateWithLBBTests-Info.plist"; sourceTree = "<group>"; };
+		B6A67C9E198314DD00F1FA9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B6A67CA0198314DD00F1FA9C /* HydrateWithLBBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HydrateWithLBBTests.m; sourceTree = "<group>"; };
+		B6A67CAA1983154C00F1FA9C /* libBean OSX Library.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libBean OSX Library.a"; path = "../../Library/Developer/Xcode/DerivedData/Bean_OSX_Library-hkwjupaswfbpieeithigtpkmhyiv/Build/Products/Debug/libBean OSX Library.a"; sourceTree = "<group>"; };
+		B6A67D95198316B800F1FA9C /* PTDBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTDBean.h; path = "../Bean-iOS-OSX-SDK/source/Public/PTDBean.h"; sourceTree = "<group>"; };
+		B6A67D96198316B800F1FA9C /* PTDBeanManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTDBeanManager.h; path = "../Bean-iOS-OSX-SDK/source/Public/PTDBeanManager.h"; sourceTree = "<group>"; };
+		B6A67D97198316B800F1FA9C /* PTDBeanRadioConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTDBeanRadioConfig.h; path = "../Bean-iOS-OSX-SDK/source/Public/PTDBeanRadioConfig.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6A67C6C198314DD00F1FA9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6A67C75198314DD00F1FA9C /* CoreGraphics.framework in Frameworks */,
+				B6A67C77198314DD00F1FA9C /* UIKit.framework in Frameworks */,
+				B6A67C73198314DD00F1FA9C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6A67C90198314DD00F1FA9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6A67C95198314DD00F1FA9C /* XCTest.framework in Frameworks */,
+				B6A67C97198314DD00F1FA9C /* UIKit.framework in Frameworks */,
+				B6A67C96198314DD00F1FA9C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B6A67C66198314DD00F1FA9C = {
+			isa = PBXGroup;
+			children = (
+				B6A67CAA1983154C00F1FA9C /* libBean OSX Library.a */,
+				B6A67D95198316B800F1FA9C /* PTDBean.h */,
+				B6A67D96198316B800F1FA9C /* PTDBeanManager.h */,
+				B6A67D97198316B800F1FA9C /* PTDBeanRadioConfig.h */,
+				B6A67C78198314DD00F1FA9C /* HydrateWithLBB */,
+				B6A67C9A198314DD00F1FA9C /* HydrateWithLBBTests */,
+				B6A67C71198314DD00F1FA9C /* Frameworks */,
+				B6A67C70198314DD00F1FA9C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B6A67C70198314DD00F1FA9C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6A67C6F198314DD00F1FA9C /* HydrateWithLBB.app */,
+				B6A67C93198314DD00F1FA9C /* HydrateWithLBBTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6A67C71198314DD00F1FA9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6A67C72198314DD00F1FA9C /* Foundation.framework */,
+				B6A67C74198314DD00F1FA9C /* CoreGraphics.framework */,
+				B6A67C76198314DD00F1FA9C /* UIKit.framework */,
+				B6A67C94198314DD00F1FA9C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6A67C78198314DD00F1FA9C /* HydrateWithLBB */ = {
+			isa = PBXGroup;
+			children = (
+				B6A67C81198314DD00F1FA9C /* HydrateWithLBBAppDelegate.h */,
+				B6A67C82198314DD00F1FA9C /* HydrateWithLBBAppDelegate.m */,
+				B6A67C84198314DD00F1FA9C /* Main.storyboard */,
+				B6A67C87198314DD00F1FA9C /* HydrateWithLBBFirstViewController.h */,
+				B6A67C88198314DD00F1FA9C /* HydrateWithLBBFirstViewController.m */,
+				B6A67C8A198314DD00F1FA9C /* HydrateWithLBBSecondViewController.h */,
+				B6A67C8B198314DD00F1FA9C /* HydrateWithLBBSecondViewController.m */,
+				B6A67C8D198314DD00F1FA9C /* Images.xcassets */,
+				B6A67C79198314DD00F1FA9C /* Supporting Files */,
+			);
+			path = HydrateWithLBB;
+			sourceTree = "<group>";
+		};
+		B6A67C79198314DD00F1FA9C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6A67C7A198314DD00F1FA9C /* HydrateWithLBB-Info.plist */,
+				B6A67C7B198314DD00F1FA9C /* InfoPlist.strings */,
+				B6A67C7E198314DD00F1FA9C /* main.m */,
+				B6A67C80198314DD00F1FA9C /* HydrateWithLBB-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B6A67C9A198314DD00F1FA9C /* HydrateWithLBBTests */ = {
+			isa = PBXGroup;
+			children = (
+				B6A67CA0198314DD00F1FA9C /* HydrateWithLBBTests.m */,
+				B6A67C9B198314DD00F1FA9C /* Supporting Files */,
+			);
+			path = HydrateWithLBBTests;
+			sourceTree = "<group>";
+		};
+		B6A67C9B198314DD00F1FA9C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6A67C9C198314DD00F1FA9C /* HydrateWithLBBTests-Info.plist */,
+				B6A67C9D198314DD00F1FA9C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6A67C6E198314DD00F1FA9C /* HydrateWithLBB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6A67CA4198314DD00F1FA9C /* Build configuration list for PBXNativeTarget "HydrateWithLBB" */;
+			buildPhases = (
+				B6A67C6B198314DD00F1FA9C /* Sources */,
+				B6A67C6C198314DD00F1FA9C /* Frameworks */,
+				B6A67C6D198314DD00F1FA9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HydrateWithLBB;
+			productName = HydrateWithLBB;
+			productReference = B6A67C6F198314DD00F1FA9C /* HydrateWithLBB.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B6A67C92198314DD00F1FA9C /* HydrateWithLBBTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6A67CA7198314DD00F1FA9C /* Build configuration list for PBXNativeTarget "HydrateWithLBBTests" */;
+			buildPhases = (
+				B6A67C8F198314DD00F1FA9C /* Sources */,
+				B6A67C90198314DD00F1FA9C /* Frameworks */,
+				B6A67C91198314DD00F1FA9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6A67C99198314DD00F1FA9C /* PBXTargetDependency */,
+			);
+			name = HydrateWithLBBTests;
+			productName = HydrateWithLBBTests;
+			productReference = B6A67C93198314DD00F1FA9C /* HydrateWithLBBTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6A67C67198314DD00F1FA9C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = HydrateWithLBB;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Janette Fong";
+				TargetAttributes = {
+					B6A67C92198314DD00F1FA9C = {
+						TestTargetID = B6A67C6E198314DD00F1FA9C;
+					};
+				};
+			};
+			buildConfigurationList = B6A67C6A198314DD00F1FA9C /* Build configuration list for PBXProject "HydrateWithLBB" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B6A67C66198314DD00F1FA9C;
+			productRefGroup = B6A67C70198314DD00F1FA9C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6A67C6E198314DD00F1FA9C /* HydrateWithLBB */,
+				B6A67C92198314DD00F1FA9C /* HydrateWithLBBTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B6A67C6D198314DD00F1FA9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6A67C8E198314DD00F1FA9C /* Images.xcassets in Resources */,
+				B6A67C7D198314DD00F1FA9C /* InfoPlist.strings in Resources */,
+				B6A67C86198314DD00F1FA9C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6A67C91198314DD00F1FA9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6A67C9F198314DD00F1FA9C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6A67C6B198314DD00F1FA9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6A67C89198314DD00F1FA9C /* HydrateWithLBBFirstViewController.m in Sources */,
+				B6A67C7F198314DD00F1FA9C /* main.m in Sources */,
+				B6A67C83198314DD00F1FA9C /* HydrateWithLBBAppDelegate.m in Sources */,
+				B6A67C8C198314DD00F1FA9C /* HydrateWithLBBSecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6A67C8F198314DD00F1FA9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6A67CA1198314DD00F1FA9C /* HydrateWithLBBTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B6A67C99198314DD00F1FA9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6A67C6E198314DD00F1FA9C /* HydrateWithLBB */;
+			targetProxy = B6A67C98198314DD00F1FA9C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B6A67C7B198314DD00F1FA9C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6A67C7C198314DD00F1FA9C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B6A67C84198314DD00F1FA9C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6A67C85198314DD00F1FA9C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B6A67C9D198314DD00F1FA9C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6A67C9E198314DD00F1FA9C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B6A67CA2198314DD00F1FA9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B6A67CA3198314DD00F1FA9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B6A67CA5198314DD00F1FA9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HydrateWithLBB/HydrateWithLBB-Prefix.pch";
+				INFOPLIST_FILE = "HydrateWithLBB/HydrateWithLBB-Info.plist";
+				LD_DEPENDENCY_INFO_FILE = "$(OBJECT_FILE_DIR_$(CURRENT_VARIANT))/$(CURRENT_ARCH)/$(PRODUCT_NAME)_dependency_info.dat";
+				LD_MAP_FILE_PATH = "$(TARGET_TEMP_DIR)/$(PRODUCT_NAME)-LinkMap-$(CURRENT_VARIANT)-$(CURRENT_ARCH).txt";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Bean_OSX_Library-hkwjupaswfbpieeithigtpkmhyiv/Build/Products/Debug",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B6A67CA6198314DD00F1FA9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HydrateWithLBB/HydrateWithLBB-Prefix.pch";
+				INFOPLIST_FILE = "HydrateWithLBB/HydrateWithLBB-Info.plist";
+				LD_DEPENDENCY_INFO_FILE = "$(OBJECT_FILE_DIR_$(CURRENT_VARIANT))/$(CURRENT_ARCH)/$(PRODUCT_NAME)_dependency_info.dat";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Bean_OSX_Library-hkwjupaswfbpieeithigtpkmhyiv/Build/Products/Debug",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B6A67CA8198314DD00F1FA9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HydrateWithLBB.app/HydrateWithLBB";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HydrateWithLBB/HydrateWithLBB-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HydrateWithLBBTests/HydrateWithLBBTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B6A67CA9198314DD00F1FA9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HydrateWithLBB.app/HydrateWithLBB";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HydrateWithLBB/HydrateWithLBB-Prefix.pch";
+				INFOPLIST_FILE = "HydrateWithLBBTests/HydrateWithLBBTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6A67C6A198314DD00F1FA9C /* Build configuration list for PBXProject "HydrateWithLBB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6A67CA2198314DD00F1FA9C /* Debug */,
+				B6A67CA3198314DD00F1FA9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6A67CA4198314DD00F1FA9C /* Build configuration list for PBXNativeTarget "HydrateWithLBB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6A67CA5198314DD00F1FA9C /* Debug */,
+				B6A67CA6198314DD00F1FA9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B6A67CA7198314DD00F1FA9C /* Build configuration list for PBXNativeTarget "HydrateWithLBBTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6A67CA8198314DD00F1FA9C /* Debug */,
+				B6A67CA9198314DD00F1FA9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B6A67C67198314DD00F1FA9C /* Project object */;
+}
