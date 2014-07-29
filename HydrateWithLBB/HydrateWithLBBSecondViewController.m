@@ -8,9 +8,10 @@
 
 #import "HydrateWithLBBSecondViewController.h"
 #import "AppMessages.h"
+#import "DailyIntakeLBB.h"
 
 @interface HydrateWithLBBSecondViewController ()
-
+@property (strong) DailyIntakeLBB *dailyIntake2;
 @end
 
 @implementation HydrateWithLBBSecondViewController
@@ -18,6 +19,7 @@
 @synthesize theBean = _theBean;
 @synthesize temp = _temp;
 @synthesize beans = _beans;
+@synthesize dailyIntake2 = _dailyIntake2;
 
 - (void)viewDidLoad
 {
@@ -32,6 +34,7 @@
     self.beanManager = [[PTDBeanManager alloc] initWithDelegate:self];
     
     self.beanManager.delegate = self;
+    self.dailyIntake2 = [[DailyIntakeLBB alloc]init];
 
     self.incomingLabel.text = @"start";
     [self updateScratch];
@@ -101,6 +104,7 @@
    // NSUUID *theUUID = [[NSUUID alloc]initWithUUIDString:@"8604DA9A-0821-6772-44A2-5C777969EF96"];
     NSUUID *theUUID = [[NSUUID alloc]initWithUUIDString:@"61AA0A7B-519D-BE6C-39db-9efd30684c40"];
     self.theBean = [self.beans objectForKey:theUUID];
+    self.theBean.delegate = self;
     [self.beanManager connectToBean:self.theBean error:nil];
     
 }
@@ -167,16 +171,20 @@
     NSLog(@"updated axes");
 }
 
--(void)bean:(PTDBean *)bean didUpdateLedColor:(UIColor *)color
-{
-    NSLog(@"updated led color");
-}
 
 -(void)bean:(PTDBean *)bean didUpdateScratchNumber:(NSNumber *)number withValue:(NSData *)data
 {
     NSLog(@"updated scratch data");
-    self.incomingLabel.text = [NSString stringWithUTF8String:[data bytes]];
-    NSString* str = [NSString stringWithUTF8String:[data bytes]];
+    
+    NSRange range = {0,1};
+    NSData *theByte = [data subdataWithRange:range];
+    self.incomingLabel.text = [NSString stringWithFormat:@"%d",((uint8_t *)[theByte bytes])[0]];
+    
+    [self.dailyIntake2 inputFromSensor:((uint8_t *)[theByte bytes])[0]];
+    
+    
+    NSString *str = [NSString stringWithFormat:@"%d",((uint8_t *)[theByte bytes])[0]];
+    //NSString* str = [NSString stringWithUTF8String:[theByte bytes]];
     NSString *msg = [NSString stringWithFormat:@"received scratch number:%@ scratch:%@", number, str];
     PTDLog(@"%@", msg);
 }
@@ -189,7 +197,7 @@
     int sNumber = 1;
     [self.theBean readScratchBank:sNumber];
     
-    [self performSelector:@selector(updateScratch) withObject:self afterDelay:5.0];
+    [self performSelector:@selector(updateScratch) withObject:self afterDelay:15.0];
     
  
 }

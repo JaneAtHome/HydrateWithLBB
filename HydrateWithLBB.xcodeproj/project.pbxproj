@@ -42,6 +42,7 @@
 		B6A67E9B19833BE900F1FA9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6A67E9D19833BE900F1FA9C /* Main.storyboard */; };
 		B6A67EA019833C1E00F1FA9C /* HydrateWithLBB-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6A67E9F19833C1E00F1FA9C /* HydrateWithLBB-Info.plist */; };
 		B6A67EA319833CC200F1FA9C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6A67EA519833CC200F1FA9C /* InfoPlist.strings */; };
+		B6A680851988104900F1FA9C /* DailyIntakeLBB.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A680841988104900F1FA9C /* DailyIntakeLBB.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +125,8 @@
 		B6A67E9C19833BE900F1FA9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B6A67E9F19833C1E00F1FA9C /* HydrateWithLBB-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "HydrateWithLBB-Info.plist"; path = "HydrateWithLBB/HydrateWithLBB-Info.plist"; sourceTree = "<group>"; };
 		B6A67EA419833CC200F1FA9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B6A680831988104900F1FA9C /* DailyIntakeLBB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DailyIntakeLBB.h; path = HydrateWithLBB/DailyIntakeLBB.h; sourceTree = "<group>"; };
+		B6A680841988104900F1FA9C /* DailyIntakeLBB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DailyIntakeLBB.m; path = HydrateWithLBB/DailyIntakeLBB.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -381,6 +384,8 @@
 				B6A67E8D19833AD300F1FA9C /* HydrateWithLBBFirstViewController.m */,
 				B6A67E8E19833AD300F1FA9C /* HydrateWithLBBSecondViewController.h */,
 				B6A67E8F19833AD300F1FA9C /* HydrateWithLBBSecondViewController.m */,
+				B6A680831988104900F1FA9C /* DailyIntakeLBB.h */,
+				B6A680841988104900F1FA9C /* DailyIntakeLBB.m */,
 				B6A67E9519833B4300F1FA9C /* main.m */,
 			);
 			name = Source;
@@ -488,6 +493,7 @@
 				B6A67E8019833A2900F1FA9C /* OadProfile.m in Sources */,
 				B6A67E7619833A2900F1FA9C /* PTDBEAN_Helper.m in Sources */,
 				B6A67E7119833A2900F1FA9C /* AppMessagingLayer.m in Sources */,
+				B6A680851988104900F1FA9C /* DailyIntakeLBB.m in Sources */,
 				B6A67E7A19833A2900F1FA9C /* GattSerialProfile.m in Sources */,
 				B6A67E8319833A2900F1FA9C /* PTDBeanManager.m in Sources */,
 				B6A67E8119833A2900F1FA9C /* PTDBleDevice.m in Sources */,

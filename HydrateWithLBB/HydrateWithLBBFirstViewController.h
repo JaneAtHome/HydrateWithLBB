@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface HydrateWithLBBFirstViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
+@property (weak, nonatomic) IBOutlet UILabel *lastUpdateLabel;
+@property (weak, nonatomic) IBOutlet UILabel *drinkAmtLabel;
 
 @end

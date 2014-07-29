@@ -7,17 +7,35 @@
 //
 
 #import "HydrateWithLBBFirstViewController.h"
+#import "DailyIntakeLBB.h"
 
 @interface HydrateWithLBBFirstViewController ()
 
+@property (strong) DailyIntakeLBB *dailyIntake;
 @end
 
 @implementation HydrateWithLBBFirstViewController
+
+@synthesize dailyIntake = _dailyIntake;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.title = @"Janette's Water Log";
+    
+    //set and update the todaysDate label
+    NSDate *currentTime = [NSDate date];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateStyle:NSDateFormatterMediumStyle]; //output: Jan 2, 1981
+    [dateFormatter setTimeStyle:NSDateFormatterNoStyle]; //suppress time
+    self.dateLabel.text = [dateFormatter stringFromDate:currentTime];
+    [self updateTime];
+    
+    //todo:load the stored intake into the label
+    self.dailyIntake = [[DailyIntakeLBB alloc]init];
+    self.drinkAmtLabel.text = [self.dailyIntake.numOunces stringValue];
 }
 
 - (void)didReceiveMemoryWarning
@@ -25,5 +43,26 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (IBAction)addWaterPress:(UIButton *)sender {
+    NSString *buttonTitle = sender.currentTitle;
+    [self.dailyIntake incrementIntake:[self.drinkAmtLabel.text intValue]  by:[buttonTitle intValue]];
+    self.drinkAmtLabel.text = [self.dailyIntake.numOunces stringValue];
+}
+
+-(void)updateTime
+{
+    //get the current time
+    NSDate *currentTime = [NSDate date];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    
+    [dateFormatter setDateStyle:NSDateFormatterMediumStyle]; //output: suppress date
+    [dateFormatter setTimeStyle:NSDateFormatterNoStyle]; //output 3:30pm
+    
+    self.dateLabel.text = [dateFormatter stringFromDate:currentTime];
+    
+    [self performSelector:@selector(updateTime) withObject:self afterDelay:1.0];
+}
+
 
 @end
