@@ -1,0 +1,3 @@
+[submodule "HydrateWithLBB/Frameworks/Bean-iOS-OSX-SDK"]
+	path = HydrateWithLBB/Frameworks/Bean-iOS-OSX-SDK
+	url = git@github.com:PunchThrough/Bean-iOS-OSX-SDK.git

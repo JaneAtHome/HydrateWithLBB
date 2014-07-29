@@ -10,18 +10,38 @@
 		B6A67C73198314DD00F1FA9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A67C72198314DD00F1FA9C /* Foundation.framework */; };
 		B6A67C75198314DD00F1FA9C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A67C74198314DD00F1FA9C /* CoreGraphics.framework */; };
 		B6A67C77198314DD00F1FA9C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A67C76198314DD00F1FA9C /* UIKit.framework */; };
-		B6A67C7D198314DD00F1FA9C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6A67C7B198314DD00F1FA9C /* InfoPlist.strings */; };
-		B6A67C7F198314DD00F1FA9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A67C7E198314DD00F1FA9C /* main.m */; };
-		B6A67C83198314DD00F1FA9C /* HydrateWithLBBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A67C82198314DD00F1FA9C /* HydrateWithLBBAppDelegate.m */; };
-		B6A67C86198314DD00F1FA9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6A67C84198314DD00F1FA9C /* Main.storyboard */; };
-		B6A67C89198314DD00F1FA9C /* HydrateWithLBBFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A67C88198314DD00F1FA9C /* HydrateWithLBBFirstViewController.m */; };
-		B6A67C8C198314DD00F1FA9C /* HydrateWithLBBSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A67C8B198314DD00F1FA9C /* HydrateWithLBBSecondViewController.m */; };
-		B6A67C8E198314DD00F1FA9C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6A67C8D198314DD00F1FA9C /* Images.xcassets */; };
 		B6A67C95198314DD00F1FA9C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A67C94198314DD00F1FA9C /* XCTest.framework */; };
 		B6A67C96198314DD00F1FA9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A67C72198314DD00F1FA9C /* Foundation.framework */; };
 		B6A67C97198314DD00F1FA9C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A67C76198314DD00F1FA9C /* UIKit.framework */; };
-		B6A67C9F198314DD00F1FA9C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6A67C9D198314DD00F1FA9C /* InfoPlist.strings */; };
-		B6A67CA1198314DD00F1FA9C /* HydrateWithLBBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A67CA0198314DD00F1FA9C /* HydrateWithLBBTests.m */; };
+		B6A67E6F19833A2900F1FA9C /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = B6A67E2B19833A2900F1FA9C /* LICENSE.txt */; };
+		B6A67E7019833A2900F1FA9C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B6A67E2C19833A2900F1FA9C /* README.md */; };
+		B6A67E7119833A2900F1FA9C /* AppMessagingLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A67E3019833A2900F1FA9C /* AppMessagingLayer.m */; };
+		B6A67E7219833A2900F1FA9C /* CBPeripheral+isConnected_Universal.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A67E3419833A2900F1FA9C /* CBPeripheral+isConnected_Universal.m */; };
+		B6A67E7319833A2900F1FA9C /* CBPeripheral+UniqueId.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A67E3619833A2900F1FA9C /* CBPeripheral+UniqueId.m */; };
+		B6A67E7419833A2900F1FA9C /* NSData+CRC.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A67E3819833A2900F1FA9C /* NSData+CRC.m */; };
+		B6A67E7519833A2900F1FA9C /* BEAN_Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A67E3B19833A2900F1FA9C /* BEAN_Helper.m */; };
+		B6A67E7619833A2900F1FA9C /* PTDBEAN_Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A67E3D19833A2900F1FA9C /* PTDBEAN_Helper.m */; };
+		B6A67E7719833A2900F1FA9C /* BatteryProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A67E4119833A2900F1FA9C /* BatteryProfile.m */; };
+		B6A67E7819833A2900F1FA9C /* BleProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A67E4319833A2900F1FA9C /* BleProfile.m */; };
+		B6A67E7919833A2900F1FA9C /* DevInfoProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A67E4619833A2900F1FA9C /* DevInfoProfile.m */; };
+		B6A67E7A19833A2900F1FA9C /* GattSerialProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A67E4919833A2900F1FA9C /* GattSerialProfile.m */; };
+		B6A67E7B19833A2900F1FA9C /* GattPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A67E4E19833A2900F1FA9C /* GattPacket.m */; };
+		B6A67E7C19833A2900F1FA9C /* GattSerialMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A67E5019833A2900F1FA9C /* GattSerialMessage.m */; };
+		B6A67E7D19833A2900F1FA9C /* GattSerialMessageRxAssembler.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A67E5219833A2900F1FA9C /* GattSerialMessageRxAssembler.m */; };
+		B6A67E7E19833A2900F1FA9C /* GattSerialTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A67E5419833A2900F1FA9C /* GattSerialTransport.m */; };
+		B6A67E7F19833A2900F1FA9C /* GattTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A67E5619833A2900F1FA9C /* GattTransport.m */; };
+		B6A67E8019833A2900F1FA9C /* OadProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A67E5A19833A2900F1FA9C /* OadProfile.m */; };
+		B6A67E8119833A2900F1FA9C /* PTDBleDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A67E5D19833A2900F1FA9C /* PTDBleDevice.m */; };
+		B6A67E8219833A2900F1FA9C /* PTDBean.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A67E5F19833A2900F1FA9C /* PTDBean.m */; };
+		B6A67E8319833A2900F1FA9C /* PTDBeanManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A67E6119833A2900F1FA9C /* PTDBeanManager.m */; };
+		B6A67E8419833A2900F1FA9C /* PTDBeanRadioConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A67E6219833A2900F1FA9C /* PTDBeanRadioConfig.m */; };
+		B6A67E9019833AD300F1FA9C /* HydrateWithLBBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A67E8B19833AD300F1FA9C /* HydrateWithLBBAppDelegate.m */; };
+		B6A67E9119833AD300F1FA9C /* HydrateWithLBBFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A67E8D19833AD300F1FA9C /* HydrateWithLBBFirstViewController.m */; };
+		B6A67E9219833AD300F1FA9C /* HydrateWithLBBSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A67E8F19833AD300F1FA9C /* HydrateWithLBBSecondViewController.m */; };
+		B6A67E9619833B4300F1FA9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A67E9519833B4300F1FA9C /* main.m */; };
+		B6A67E9B19833BE900F1FA9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6A67E9D19833BE900F1FA9C /* Main.storyboard */; };
+		B6A67EA019833C1E00F1FA9C /* HydrateWithLBB-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6A67E9F19833C1E00F1FA9C /* HydrateWithLBB-Info.plist */; };
+		B6A67EA319833CC200F1FA9C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6A67EA519833CC200F1FA9C /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,27 +59,71 @@
 		B6A67C72198314DD00F1FA9C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B6A67C74198314DD00F1FA9C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		B6A67C76198314DD00F1FA9C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		B6A67C7A198314DD00F1FA9C /* HydrateWithLBB-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HydrateWithLBB-Info.plist"; sourceTree = "<group>"; };
-		B6A67C7C198314DD00F1FA9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B6A67C7E198314DD00F1FA9C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B6A67C80198314DD00F1FA9C /* HydrateWithLBB-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HydrateWithLBB-Prefix.pch"; sourceTree = "<group>"; };
-		B6A67C81198314DD00F1FA9C /* HydrateWithLBBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HydrateWithLBBAppDelegate.h; sourceTree = "<group>"; };
-		B6A67C82198314DD00F1FA9C /* HydrateWithLBBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HydrateWithLBBAppDelegate.m; sourceTree = "<group>"; };
-		B6A67C85198314DD00F1FA9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B6A67C87198314DD00F1FA9C /* HydrateWithLBBFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HydrateWithLBBFirstViewController.h; sourceTree = "<group>"; };
-		B6A67C88198314DD00F1FA9C /* HydrateWithLBBFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HydrateWithLBBFirstViewController.m; sourceTree = "<group>"; };
-		B6A67C8A198314DD00F1FA9C /* HydrateWithLBBSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HydrateWithLBBSecondViewController.h; sourceTree = "<group>"; };
-		B6A67C8B198314DD00F1FA9C /* HydrateWithLBBSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HydrateWithLBBSecondViewController.m; sourceTree = "<group>"; };
-		B6A67C8D198314DD00F1FA9C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B6A67C93198314DD00F1FA9C /* HydrateWithLBBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HydrateWithLBBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6A67C94198314DD00F1FA9C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		B6A67C9C198314DD00F1FA9C /* HydrateWithLBBTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HydrateWithLBBTests-Info.plist"; sourceTree = "<group>"; };
-		B6A67C9E198314DD00F1FA9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B6A67CA0198314DD00F1FA9C /* HydrateWithLBBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HydrateWithLBBTests.m; sourceTree = "<group>"; };
-		B6A67CAA1983154C00F1FA9C /* libBean OSX Library.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libBean OSX Library.a"; path = "../../Library/Developer/Xcode/DerivedData/Bean_OSX_Library-hkwjupaswfbpieeithigtpkmhyiv/Build/Products/Debug/libBean OSX Library.a"; sourceTree = "<group>"; };
-		B6A67D95198316B800F1FA9C /* PTDBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTDBean.h; path = "../Bean-iOS-OSX-SDK/source/Public/PTDBean.h"; sourceTree = "<group>"; };
-		B6A67D96198316B800F1FA9C /* PTDBeanManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTDBeanManager.h; path = "../Bean-iOS-OSX-SDK/source/Public/PTDBeanManager.h"; sourceTree = "<group>"; };
-		B6A67D97198316B800F1FA9C /* PTDBeanRadioConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTDBeanRadioConfig.h; path = "../Bean-iOS-OSX-SDK/source/Public/PTDBeanRadioConfig.h"; sourceTree = "<group>"; };
+		B6A67E1919833A2900F1FA9C /* AppMessages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppMessages.h; sourceTree = "<group>"; };
+		B6A67E1A19833A2900F1FA9C /* AppMessageTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppMessageTypes.h; sourceTree = "<group>"; };
+		B6A67E2B19833A2900F1FA9C /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		B6A67E2C19833A2900F1FA9C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		B6A67E2F19833A2900F1FA9C /* AppMessagingLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppMessagingLayer.h; sourceTree = "<group>"; };
+		B6A67E3019833A2900F1FA9C /* AppMessagingLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppMessagingLayer.m; sourceTree = "<group>"; };
+		B6A67E3119833A2900F1FA9C /* BEAN_Globals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEAN_Globals.h; sourceTree = "<group>"; };
+		B6A67E3319833A2900F1FA9C /* CBPeripheral+isConnected_Universal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBPeripheral+isConnected_Universal.h"; sourceTree = "<group>"; };
+		B6A67E3419833A2900F1FA9C /* CBPeripheral+isConnected_Universal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBPeripheral+isConnected_Universal.m"; sourceTree = "<group>"; };
+		B6A67E3519833A2900F1FA9C /* CBPeripheral+UniqueId.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBPeripheral+UniqueId.h"; sourceTree = "<group>"; };
+		B6A67E3619833A2900F1FA9C /* CBPeripheral+UniqueId.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBPeripheral+UniqueId.m"; sourceTree = "<group>"; };
+		B6A67E3719833A2900F1FA9C /* NSData+CRC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CRC.h"; sourceTree = "<group>"; };
+		B6A67E3819833A2900F1FA9C /* NSData+CRC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CRC.m"; sourceTree = "<group>"; };
+		B6A67E3A19833A2900F1FA9C /* BEAN_Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEAN_Helper.h; sourceTree = "<group>"; };
+		B6A67E3B19833A2900F1FA9C /* BEAN_Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEAN_Helper.m; sourceTree = "<group>"; };
+		B6A67E3C19833A2900F1FA9C /* PTDBEAN_Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTDBEAN_Helper.h; sourceTree = "<group>"; };
+		B6A67E3D19833A2900F1FA9C /* PTDBEAN_Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTDBEAN_Helper.m; sourceTree = "<group>"; };
+		B6A67E4019833A2900F1FA9C /* BatteryProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BatteryProfile.h; sourceTree = "<group>"; };
+		B6A67E4119833A2900F1FA9C /* BatteryProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BatteryProfile.m; sourceTree = "<group>"; };
+		B6A67E4219833A2900F1FA9C /* BleProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BleProfile.h; sourceTree = "<group>"; };
+		B6A67E4319833A2900F1FA9C /* BleProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BleProfile.m; sourceTree = "<group>"; };
+		B6A67E4519833A2900F1FA9C /* DevInfoProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DevInfoProfile.h; sourceTree = "<group>"; };
+		B6A67E4619833A2900F1FA9C /* DevInfoProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DevInfoProfile.m; sourceTree = "<group>"; };
+		B6A67E4819833A2900F1FA9C /* GattSerialProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GattSerialProfile.h; sourceTree = "<group>"; };
+		B6A67E4919833A2900F1FA9C /* GattSerialProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GattSerialProfile.m; sourceTree = "<group>"; };
+		B6A67E4B19833A2900F1FA9C /* GattCharacteristicHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GattCharacteristicHandler.h; sourceTree = "<group>"; };
+		B6A67E4C19833A2900F1FA9C /* GattCharacteristicObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GattCharacteristicObserver.h; sourceTree = "<group>"; };
+		B6A67E4D19833A2900F1FA9C /* GattPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GattPacket.h; sourceTree = "<group>"; };
+		B6A67E4E19833A2900F1FA9C /* GattPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GattPacket.m; sourceTree = "<group>"; };
+		B6A67E4F19833A2900F1FA9C /* GattSerialMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GattSerialMessage.h; sourceTree = "<group>"; };
+		B6A67E5019833A2900F1FA9C /* GattSerialMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GattSerialMessage.m; sourceTree = "<group>"; };
+		B6A67E5119833A2900F1FA9C /* GattSerialMessageRxAssembler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GattSerialMessageRxAssembler.h; sourceTree = "<group>"; };
+		B6A67E5219833A2900F1FA9C /* GattSerialMessageRxAssembler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GattSerialMessageRxAssembler.m; sourceTree = "<group>"; };
+		B6A67E5319833A2900F1FA9C /* GattSerialTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GattSerialTransport.h; sourceTree = "<group>"; };
+		B6A67E5419833A2900F1FA9C /* GattSerialTransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GattSerialTransport.m; sourceTree = "<group>"; };
+		B6A67E5519833A2900F1FA9C /* GattTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GattTransport.h; sourceTree = "<group>"; };
+		B6A67E5619833A2900F1FA9C /* GattTransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GattTransport.m; sourceTree = "<group>"; };
+		B6A67E5819833A2900F1FA9C /* oad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oad.h; sourceTree = "<group>"; };
+		B6A67E5919833A2900F1FA9C /* OadProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OadProfile.h; sourceTree = "<group>"; };
+		B6A67E5A19833A2900F1FA9C /* OadProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OadProfile.m; sourceTree = "<group>"; };
+		B6A67E5B19833A2900F1FA9C /* Profile_Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Profile_Protocol.h; sourceTree = "<group>"; };
+		B6A67E5C19833A2900F1FA9C /* ProfileDelegate_Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileDelegate_Protocol.h; sourceTree = "<group>"; };
+		B6A67E5D19833A2900F1FA9C /* PTDBleDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTDBleDevice.m; sourceTree = "<group>"; };
+		B6A67E5E19833A2900F1FA9C /* PTDBean+Protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PTDBean+Protected.h"; sourceTree = "<group>"; };
+		B6A67E5F19833A2900F1FA9C /* PTDBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTDBean.m; sourceTree = "<group>"; };
+		B6A67E6019833A2900F1FA9C /* PTDBeanManager+Protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PTDBeanManager+Protected.h"; sourceTree = "<group>"; };
+		B6A67E6119833A2900F1FA9C /* PTDBeanManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTDBeanManager.m; sourceTree = "<group>"; };
+		B6A67E6219833A2900F1FA9C /* PTDBeanRadioConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTDBeanRadioConfig.m; sourceTree = "<group>"; };
+		B6A67E6419833A2900F1FA9C /* PTDBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTDBean.h; sourceTree = "<group>"; };
+		B6A67E6519833A2900F1FA9C /* PTDBeanManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTDBeanManager.h; sourceTree = "<group>"; };
+		B6A67E6619833A2900F1FA9C /* PTDBeanRadioConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTDBeanRadioConfig.h; sourceTree = "<group>"; };
+		B6A67E6719833A2900F1FA9C /* PTDBleDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTDBleDevice.h; sourceTree = "<group>"; };
+		B6A67E8919833AD300F1FA9C /* HydrateWithLBB-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "HydrateWithLBB-Prefix.pch"; path = "HydrateWithLBB/HydrateWithLBB-Prefix.pch"; sourceTree = "<group>"; };
+		B6A67E8A19833AD300F1FA9C /* HydrateWithLBBAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HydrateWithLBBAppDelegate.h; path = HydrateWithLBB/HydrateWithLBBAppDelegate.h; sourceTree = "<group>"; };
+		B6A67E8B19833AD300F1FA9C /* HydrateWithLBBAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HydrateWithLBBAppDelegate.m; path = HydrateWithLBB/HydrateWithLBBAppDelegate.m; sourceTree = "<group>"; };
+		B6A67E8C19833AD300F1FA9C /* HydrateWithLBBFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HydrateWithLBBFirstViewController.h; path = HydrateWithLBB/HydrateWithLBBFirstViewController.h; sourceTree = "<group>"; };
+		B6A67E8D19833AD300F1FA9C /* HydrateWithLBBFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HydrateWithLBBFirstViewController.m; path = HydrateWithLBB/HydrateWithLBBFirstViewController.m; sourceTree = "<group>"; };
+		B6A67E8E19833AD300F1FA9C /* HydrateWithLBBSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HydrateWithLBBSecondViewController.h; path = HydrateWithLBB/HydrateWithLBBSecondViewController.h; sourceTree = "<group>"; };
+		B6A67E8F19833AD300F1FA9C /* HydrateWithLBBSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HydrateWithLBBSecondViewController.m; path = HydrateWithLBB/HydrateWithLBBSecondViewController.m; sourceTree = "<group>"; };
+		B6A67E9519833B4300F1FA9C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = HydrateWithLBB/main.m; sourceTree = "<group>"; };
+		B6A67E9C19833BE900F1FA9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B6A67E9F19833C1E00F1FA9C /* HydrateWithLBB-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "HydrateWithLBB-Info.plist"; path = "HydrateWithLBB/HydrateWithLBB-Info.plist"; sourceTree = "<group>"; };
+		B6A67EA419833CC200F1FA9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,12 +153,8 @@
 		B6A67C66198314DD00F1FA9C = {
 			isa = PBXGroup;
 			children = (
-				B6A67CAA1983154C00F1FA9C /* libBean OSX Library.a */,
-				B6A67D95198316B800F1FA9C /* PTDBean.h */,
-				B6A67D96198316B800F1FA9C /* PTDBeanManager.h */,
-				B6A67D97198316B800F1FA9C /* PTDBeanRadioConfig.h */,
-				B6A67C78198314DD00F1FA9C /* HydrateWithLBB */,
-				B6A67C9A198314DD00F1FA9C /* HydrateWithLBBTests */,
+				B6A67E8619833A8300F1FA9C /* Source */,
+				B6A67E8519833A7000F1FA9C /* Resources */,
 				B6A67C71198314DD00F1FA9C /* Frameworks */,
 				B6A67C70198314DD00F1FA9C /* Products */,
 			);
@@ -112,57 +172,218 @@
 		B6A67C71198314DD00F1FA9C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B6A67DED1983376900F1FA9C /* Other Frameworks */,
+				B6A67DEC1983375700F1FA9C /* System Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6A67DEC1983375700F1FA9C /* System Frameworks */ = {
+			isa = PBXGroup;
+			children = (
 				B6A67C72198314DD00F1FA9C /* Foundation.framework */,
 				B6A67C74198314DD00F1FA9C /* CoreGraphics.framework */,
 				B6A67C76198314DD00F1FA9C /* UIKit.framework */,
 				B6A67C94198314DD00F1FA9C /* XCTest.framework */,
 			);
-			name = Frameworks;
+			name = "System Frameworks";
 			sourceTree = "<group>";
 		};
-		B6A67C78198314DD00F1FA9C /* HydrateWithLBB */ = {
+		B6A67DED1983376900F1FA9C /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B6A67C81198314DD00F1FA9C /* HydrateWithLBBAppDelegate.h */,
-				B6A67C82198314DD00F1FA9C /* HydrateWithLBBAppDelegate.m */,
-				B6A67C84198314DD00F1FA9C /* Main.storyboard */,
-				B6A67C87198314DD00F1FA9C /* HydrateWithLBBFirstViewController.h */,
-				B6A67C88198314DD00F1FA9C /* HydrateWithLBBFirstViewController.m */,
-				B6A67C8A198314DD00F1FA9C /* HydrateWithLBBSecondViewController.h */,
-				B6A67C8B198314DD00F1FA9C /* HydrateWithLBBSecondViewController.m */,
-				B6A67C8D198314DD00F1FA9C /* Images.xcassets */,
-				B6A67C79198314DD00F1FA9C /* Supporting Files */,
+				B6A67E1519833A0B00F1FA9C /* Bean */,
 			);
-			path = HydrateWithLBB;
+			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		B6A67C79198314DD00F1FA9C /* Supporting Files */ = {
+		B6A67E1519833A0B00F1FA9C /* Bean */ = {
 			isa = PBXGroup;
 			children = (
-				B6A67C7A198314DD00F1FA9C /* HydrateWithLBB-Info.plist */,
-				B6A67C7B198314DD00F1FA9C /* InfoPlist.strings */,
-				B6A67C7E198314DD00F1FA9C /* main.m */,
-				B6A67C80198314DD00F1FA9C /* HydrateWithLBB-Prefix.pch */,
+				B6A67E1619833A2900F1FA9C /* Bean-iOS-OSX-SDK */,
 			);
-			name = "Supporting Files";
+			name = Bean;
 			sourceTree = "<group>";
 		};
-		B6A67C9A198314DD00F1FA9C /* HydrateWithLBBTests */ = {
+		B6A67E1619833A2900F1FA9C /* Bean-iOS-OSX-SDK */ = {
 			isa = PBXGroup;
 			children = (
-				B6A67CA0198314DD00F1FA9C /* HydrateWithLBBTests.m */,
-				B6A67C9B198314DD00F1FA9C /* Supporting Files */,
+				B6A67E1819833A2900F1FA9C /* App Message Definitions */,
+				B6A67E2B19833A2900F1FA9C /* LICENSE.txt */,
+				B6A67E2C19833A2900F1FA9C /* README.md */,
+				B6A67E2D19833A2900F1FA9C /* source */,
 			);
-			path = HydrateWithLBBTests;
+			name = "Bean-iOS-OSX-SDK";
+			path = "HydrateWithLBB/Frameworks/Bean-iOS-OSX-SDK";
 			sourceTree = "<group>";
 		};
-		B6A67C9B198314DD00F1FA9C /* Supporting Files */ = {
+		B6A67E1819833A2900F1FA9C /* App Message Definitions */ = {
 			isa = PBXGroup;
 			children = (
-				B6A67C9C198314DD00F1FA9C /* HydrateWithLBBTests-Info.plist */,
-				B6A67C9D198314DD00F1FA9C /* InfoPlist.strings */,
+				B6A67E1919833A2900F1FA9C /* AppMessages.h */,
+				B6A67E1A19833A2900F1FA9C /* AppMessageTypes.h */,
 			);
-			name = "Supporting Files";
+			path = "App Message Definitions";
+			sourceTree = "<group>";
+		};
+		B6A67E2D19833A2900F1FA9C /* source */ = {
+			isa = PBXGroup;
+			children = (
+				B6A67E2E19833A2900F1FA9C /* AppMessages */,
+				B6A67E3119833A2900F1FA9C /* BEAN_Globals.h */,
+				B6A67E3219833A2900F1FA9C /* Categories */,
+				B6A67E3919833A2900F1FA9C /* Helper */,
+				B6A67E3E19833A2900F1FA9C /* Profiles */,
+				B6A67E5E19833A2900F1FA9C /* PTDBean+Protected.h */,
+				B6A67E5F19833A2900F1FA9C /* PTDBean.m */,
+				B6A67E6019833A2900F1FA9C /* PTDBeanManager+Protected.h */,
+				B6A67E6119833A2900F1FA9C /* PTDBeanManager.m */,
+				B6A67E6219833A2900F1FA9C /* PTDBeanRadioConfig.m */,
+				B6A67E6319833A2900F1FA9C /* Public */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		B6A67E2E19833A2900F1FA9C /* AppMessages */ = {
+			isa = PBXGroup;
+			children = (
+				B6A67E2F19833A2900F1FA9C /* AppMessagingLayer.h */,
+				B6A67E3019833A2900F1FA9C /* AppMessagingLayer.m */,
+			);
+			path = AppMessages;
+			sourceTree = "<group>";
+		};
+		B6A67E3219833A2900F1FA9C /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				B6A67E3319833A2900F1FA9C /* CBPeripheral+isConnected_Universal.h */,
+				B6A67E3419833A2900F1FA9C /* CBPeripheral+isConnected_Universal.m */,
+				B6A67E3519833A2900F1FA9C /* CBPeripheral+UniqueId.h */,
+				B6A67E3619833A2900F1FA9C /* CBPeripheral+UniqueId.m */,
+				B6A67E3719833A2900F1FA9C /* NSData+CRC.h */,
+				B6A67E3819833A2900F1FA9C /* NSData+CRC.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		B6A67E3919833A2900F1FA9C /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				B6A67E3A19833A2900F1FA9C /* BEAN_Helper.h */,
+				B6A67E3B19833A2900F1FA9C /* BEAN_Helper.m */,
+				B6A67E3C19833A2900F1FA9C /* PTDBEAN_Helper.h */,
+				B6A67E3D19833A2900F1FA9C /* PTDBEAN_Helper.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		B6A67E3E19833A2900F1FA9C /* Profiles */ = {
+			isa = PBXGroup;
+			children = (
+				B6A67E3F19833A2900F1FA9C /* Battery */,
+				B6A67E4219833A2900F1FA9C /* BleProfile.h */,
+				B6A67E4319833A2900F1FA9C /* BleProfile.m */,
+				B6A67E4419833A2900F1FA9C /* Device Info */,
+				B6A67E4719833A2900F1FA9C /* Gatt Serial */,
+				B6A67E5719833A2900F1FA9C /* OAD */,
+				B6A67E5B19833A2900F1FA9C /* Profile_Protocol.h */,
+				B6A67E5C19833A2900F1FA9C /* ProfileDelegate_Protocol.h */,
+				B6A67E5D19833A2900F1FA9C /* PTDBleDevice.m */,
+			);
+			path = Profiles;
+			sourceTree = "<group>";
+		};
+		B6A67E3F19833A2900F1FA9C /* Battery */ = {
+			isa = PBXGroup;
+			children = (
+				B6A67E4019833A2900F1FA9C /* BatteryProfile.h */,
+				B6A67E4119833A2900F1FA9C /* BatteryProfile.m */,
+			);
+			path = Battery;
+			sourceTree = "<group>";
+		};
+		B6A67E4419833A2900F1FA9C /* Device Info */ = {
+			isa = PBXGroup;
+			children = (
+				B6A67E4519833A2900F1FA9C /* DevInfoProfile.h */,
+				B6A67E4619833A2900F1FA9C /* DevInfoProfile.m */,
+			);
+			path = "Device Info";
+			sourceTree = "<group>";
+		};
+		B6A67E4719833A2900F1FA9C /* Gatt Serial */ = {
+			isa = PBXGroup;
+			children = (
+				B6A67E4819833A2900F1FA9C /* GattSerialProfile.h */,
+				B6A67E4919833A2900F1FA9C /* GattSerialProfile.m */,
+				B6A67E4A19833A2900F1FA9C /* Transport */,
+			);
+			path = "Gatt Serial";
+			sourceTree = "<group>";
+		};
+		B6A67E4A19833A2900F1FA9C /* Transport */ = {
+			isa = PBXGroup;
+			children = (
+				B6A67E4B19833A2900F1FA9C /* GattCharacteristicHandler.h */,
+				B6A67E4C19833A2900F1FA9C /* GattCharacteristicObserver.h */,
+				B6A67E4D19833A2900F1FA9C /* GattPacket.h */,
+				B6A67E4E19833A2900F1FA9C /* GattPacket.m */,
+				B6A67E4F19833A2900F1FA9C /* GattSerialMessage.h */,
+				B6A67E5019833A2900F1FA9C /* GattSerialMessage.m */,
+				B6A67E5119833A2900F1FA9C /* GattSerialMessageRxAssembler.h */,
+				B6A67E5219833A2900F1FA9C /* GattSerialMessageRxAssembler.m */,
+				B6A67E5319833A2900F1FA9C /* GattSerialTransport.h */,
+				B6A67E5419833A2900F1FA9C /* GattSerialTransport.m */,
+				B6A67E5519833A2900F1FA9C /* GattTransport.h */,
+				B6A67E5619833A2900F1FA9C /* GattTransport.m */,
+			);
+			path = Transport;
+			sourceTree = "<group>";
+		};
+		B6A67E5719833A2900F1FA9C /* OAD */ = {
+			isa = PBXGroup;
+			children = (
+				B6A67E5819833A2900F1FA9C /* oad.h */,
+				B6A67E5919833A2900F1FA9C /* OadProfile.h */,
+				B6A67E5A19833A2900F1FA9C /* OadProfile.m */,
+			);
+			path = OAD;
+			sourceTree = "<group>";
+		};
+		B6A67E6319833A2900F1FA9C /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				B6A67E6419833A2900F1FA9C /* PTDBean.h */,
+				B6A67E6519833A2900F1FA9C /* PTDBeanManager.h */,
+				B6A67E6619833A2900F1FA9C /* PTDBeanRadioConfig.h */,
+				B6A67E6719833A2900F1FA9C /* PTDBleDevice.h */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		B6A67E8519833A7000F1FA9C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B6A67EA519833CC200F1FA9C /* InfoPlist.strings */,
+				B6A67E9F19833C1E00F1FA9C /* HydrateWithLBB-Info.plist */,
+				B6A67E9D19833BE900F1FA9C /* Main.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B6A67E8619833A8300F1FA9C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B6A67E8919833AD300F1FA9C /* HydrateWithLBB-Prefix.pch */,
+				B6A67E8A19833AD300F1FA9C /* HydrateWithLBBAppDelegate.h */,
+				B6A67E8B19833AD300F1FA9C /* HydrateWithLBBAppDelegate.m */,
+				B6A67E8C19833AD300F1FA9C /* HydrateWithLBBFirstViewController.h */,
+				B6A67E8D19833AD300F1FA9C /* HydrateWithLBBFirstViewController.m */,
+				B6A67E8E19833AD300F1FA9C /* HydrateWithLBBSecondViewController.h */,
+				B6A67E8F19833AD300F1FA9C /* HydrateWithLBBSecondViewController.m */,
+				B6A67E9519833B4300F1FA9C /* main.m */,
+			);
+			name = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,9 +463,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6A67C8E198314DD00F1FA9C /* Images.xcassets in Resources */,
-				B6A67C7D198314DD00F1FA9C /* InfoPlist.strings in Resources */,
-				B6A67C86198314DD00F1FA9C /* Main.storyboard in Resources */,
+				B6A67E7019833A2900F1FA9C /* README.md in Resources */,
+				B6A67EA019833C1E00F1FA9C /* HydrateWithLBB-Info.plist in Resources */,
+				B6A67E6F19833A2900F1FA9C /* LICENSE.txt in Resources */,
+				B6A67E9B19833BE900F1FA9C /* Main.storyboard in Resources */,
+				B6A67EA319833CC200F1FA9C /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,7 +475,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6A67C9F198314DD00F1FA9C /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,10 +485,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6A67C89198314DD00F1FA9C /* HydrateWithLBBFirstViewController.m in Sources */,
-				B6A67C7F198314DD00F1FA9C /* main.m in Sources */,
-				B6A67C83198314DD00F1FA9C /* HydrateWithLBBAppDelegate.m in Sources */,
-				B6A67C8C198314DD00F1FA9C /* HydrateWithLBBSecondViewController.m in Sources */,
+				B6A67E8019833A2900F1FA9C /* OadProfile.m in Sources */,
+				B6A67E7619833A2900F1FA9C /* PTDBEAN_Helper.m in Sources */,
+				B6A67E7119833A2900F1FA9C /* AppMessagingLayer.m in Sources */,
+				B6A67E7A19833A2900F1FA9C /* GattSerialProfile.m in Sources */,
+				B6A67E8319833A2900F1FA9C /* PTDBeanManager.m in Sources */,
+				B6A67E8119833A2900F1FA9C /* PTDBleDevice.m in Sources */,
+				B6A67E7519833A2900F1FA9C /* BEAN_Helper.m in Sources */,
+				B6A67E7319833A2900F1FA9C /* CBPeripheral+UniqueId.m in Sources */,
+				B6A67E9219833AD300F1FA9C /* HydrateWithLBBSecondViewController.m in Sources */,
+				B6A67E9119833AD300F1FA9C /* HydrateWithLBBFirstViewController.m in Sources */,
+				B6A67E7819833A2900F1FA9C /* BleProfile.m in Sources */,
+				B6A67E7919833A2900F1FA9C /* DevInfoProfile.m in Sources */,
+				B6A67E7C19833A2900F1FA9C /* GattSerialMessage.m in Sources */,
+				B6A67E7E19833A2900F1FA9C /* GattSerialTransport.m in Sources */,
+				B6A67E7219833A2900F1FA9C /* CBPeripheral+isConnected_Universal.m in Sources */,
+				B6A67E8419833A2900F1FA9C /* PTDBeanRadioConfig.m in Sources */,
+				B6A67E9019833AD300F1FA9C /* HydrateWithLBBAppDelegate.m in Sources */,
+				B6A67E7D19833A2900F1FA9C /* GattSerialMessageRxAssembler.m in Sources */,
+				B6A67E7419833A2900F1FA9C /* NSData+CRC.m in Sources */,
+				B6A67E8219833A2900F1FA9C /* PTDBean.m in Sources */,
+				B6A67E7719833A2900F1FA9C /* BatteryProfile.m in Sources */,
+				B6A67E7B19833A2900F1FA9C /* GattPacket.m in Sources */,
+				B6A67E9619833B4300F1FA9C /* main.m in Sources */,
+				B6A67E7F19833A2900F1FA9C /* GattTransport.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +516,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6A67CA1198314DD00F1FA9C /* HydrateWithLBBTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,28 +530,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B6A67C7B198314DD00F1FA9C /* InfoPlist.strings */ = {
+		B6A67E9D19833BE900F1FA9C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B6A67C7C198314DD00F1FA9C /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		B6A67C84198314DD00F1FA9C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B6A67C85198314DD00F1FA9C /* Base */,
+				B6A67E9C19833BE900F1FA9C /* Base */,
 			);
 			name = Main.storyboard;
+			path = HydrateWithLBB;
 			sourceTree = "<group>";
 		};
-		B6A67C9D198314DD00F1FA9C /* InfoPlist.strings */ = {
+		B6A67EA519833CC200F1FA9C /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B6A67C9E198314DD00F1FA9C /* en */,
+				B6A67EA419833CC200F1FA9C /* en */,
 			);
 			name = InfoPlist.strings;
+			path = HydrateWithLBB;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -482,6 +717,7 @@
 				B6A67CA6198314DD00F1FA9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B6A67CA7198314DD00F1FA9C /* Build configuration list for PBXNativeTarget "HydrateWithLBBTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +726,7 @@
 				B6A67CA9198314DD00F1FA9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
