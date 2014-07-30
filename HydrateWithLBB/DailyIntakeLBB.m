@@ -17,7 +17,24 @@
 
 @synthesize bottleAmount = _bottleAmount;
 @synthesize defaults = _defaults;
+@synthesize someProperty = _someProperty;
+@synthesize numOunces = _numOunces;
+@synthesize todaysDate = _todaysDate;
 
++(id)sharedDailyIntake
+{
+    static DailyIntakeLBB *sharedMyDailyIntake = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{sharedMyDailyIntake = [[self alloc]initPrivate]; });
+    return sharedMyDailyIntake;
+}
+
+//no one should call init
+-(id)init
+{
+    [NSException raise:@"Singleton" format:@"use +[DailyIntakeLBB] sharedDailyIntake"];
+    return nil;
+}
 /*
 specialized init:
 check to see if NSUserDefaults has key=LASTDRINKDATE
@@ -38,8 +55,14 @@ create NSUSerDefaults fields for
 
 */
 
--(DailyIntakeLBB*)init
+//secret designated initializer
+-(DailyIntakeLBB*)initPrivate
 {
+    self = [super init];
+    
+    if (self) {
+       
+    
     self.defaults = [NSUserDefaults standardUserDefaults];
     NSDate *storedDate = [self.defaults objectForKey:LASTDRINKDATE];
     
@@ -90,6 +113,7 @@ create NSUSerDefaults fields for
         [self.defaults setObject:self.todaysDate forKey:LASTDRINKDATE];
         [self.defaults setObject:self.numOunces forKey:LASTDRINKAMOUNT];
         //[self.defaults setObject:self.bottleAmount forKey:LASTBOTTLEAMOUNT];
+    }
     }
     return self;
 }
@@ -142,7 +166,7 @@ create NSUSerDefaults fields for
             if (drank >= 0) {
                 self.numOunces = [NSNumber numberWithInt:[self.numOunces intValue] + drank];
                 [self.defaults setObject:self.numOunces forKey:LASTDRINKAMOUNT];
-                [self.bottleAmount = [NSNumber numberWithInt:ounces]];
+                self.bottleAmount = [NSNumber numberWithInt:ounces];
                 [self.defaults setObject:self.bottleAmount forKey:LASTBOTTLEAMOUNT];
               
             } else
@@ -168,6 +192,8 @@ create NSUSerDefaults fields for
     
     
 }
+
+
 
 
 

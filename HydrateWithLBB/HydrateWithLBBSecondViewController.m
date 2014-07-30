@@ -11,7 +11,7 @@
 #import "DailyIntakeLBB.h"
 
 @interface HydrateWithLBBSecondViewController ()
-@property (strong) DailyIntakeLBB *dailyIntake2;
+
 @end
 
 @implementation HydrateWithLBBSecondViewController
@@ -19,13 +19,15 @@
 @synthesize theBean = _theBean;
 @synthesize temp = _temp;
 @synthesize beans = _beans;
-@synthesize dailyIntake2 = _dailyIntake2;
+
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-
+    DailyIntakeLBB *sharedDailyIntake = [DailyIntakeLBB sharedDailyIntake];
+    
+    self.title = @"Details";
     
     self.beans = [NSMutableDictionary dictionary];
    self.theBean = nil;
@@ -34,7 +36,7 @@
     self.beanManager = [[PTDBeanManager alloc] initWithDelegate:self];
     
     self.beanManager.delegate = self;
-    self.dailyIntake2 = [[DailyIntakeLBB alloc]init];
+
 
     self.incomingLabel.text = @"start";
     [self updateScratch];
@@ -180,7 +182,7 @@
     NSData *theByte = [data subdataWithRange:range];
     self.incomingLabel.text = [NSString stringWithFormat:@"%d",((uint8_t *)[theByte bytes])[0]];
     
-    [self.dailyIntake2 inputFromSensor:((uint8_t *)[theByte bytes])[0]];
+    [[DailyIntakeLBB sharedDailyIntake] inputFromSensor:((uint8_t *)[theByte bytes])[0]];
     
     
     NSString *str = [NSString stringWithFormat:@"%d",((uint8_t *)[theByte bytes])[0]];

@@ -8,12 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
-@interface DailyIntakeLBB : NSObject
+@interface DailyIntakeLBB : NSObject {
+    NSString *someProperty;
+}
 
 
 @property (strong) NSNumber *numOunces; //total ounces drank today
 @property (strong) NSDate *todaysDate; //todaysDAte
 
+@property (nonatomic, retain) NSString *someProperty;
+
+//necessary for singleton status!
++(id)sharedDailyIntake;
 
 //special init that makes sure that stored values are taken into acct
 -(DailyIntakeLBB*)init;
