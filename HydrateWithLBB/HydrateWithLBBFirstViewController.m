@@ -41,6 +41,16 @@
     self.drinkAmtLabel.text = [[[DailyIntakeLBB sharedDailyIntake] numOunces] stringValue];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    // the next vc grabs the delegate to receive callbacks
+    // when the view appears , we want to grab them back.
+    //update the drink label from the model
+    self.drinkAmtLabel.text = [[[DailyIntakeLBB sharedDailyIntake] numOunces] stringValue];
+    
+    
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

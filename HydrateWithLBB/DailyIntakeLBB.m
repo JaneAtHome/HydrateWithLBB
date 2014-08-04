@@ -150,45 +150,65 @@ create NSUSerDefaults fields for
  If the current ounces is more than they were before, then ignore the difference
  */
 
--(void)inputFromSensor:(int)ounces
+-(NSNumber*)inputFromSensor:(int)ounces
 {
     NSLog(@"input from sensor");
+    NSNumber *returnNumber;
+    
     if (self.bottleAmount == nil) {
         //set the bottle amount to ounces
         self.bottleAmount = [NSNumber numberWithInt:ounces];
         [self.defaults setObject:self.bottleAmount forKey:LASTBOTTLEAMOUNT];
-        NSLog(@"initializing bottle amount");
+
+        returnNumber = [NSNumber numberWithLong:0];
     }
     else
     {
         if (ounces < [self.bottleAmount intValue]) {
             int drank = [self.bottleAmount intValue] - ounces;
-            if (drank >= 0) {
+            if (drank >= 0 && drank <=24) {
                 self.numOunces = [NSNumber numberWithInt:[self.numOunces intValue] + drank];
                 [self.defaults setObject:self.numOunces forKey:LASTDRINKAMOUNT];
                 self.bottleAmount = [NSNumber numberWithInt:ounces];
                 [self.defaults setObject:self.bottleAmount forKey:LASTBOTTLEAMOUNT];
+                returnNumber = [NSNumber numberWithLong:1];
               
-            } else
+            }
+            else if(drank < 0)
             {
                 //ERROR!!
                 NSLog(@"oops. you drank more than possible");
+                returnNumber = [NSNumber numberWithLong:0];
                 
+            } else
+            {
+                NSLog(@"oops you couldnt have drank ");
+                NSLog(@"%d", drank);
+                returnNumber = [NSNumber numberWithLong:0];
             }
-        } else if (ounces > [self.bottleAmount intValue])
+        } else if (ounces > [self.bottleAmount intValue] && ounces <= 24)
         {
             //for now assumes that sensors are always right and that this means the user added more water to the bottle
             self.bottleAmount = [NSNumber numberWithInt:ounces];
             [self.defaults setObject:self.bottleAmount forKey:LASTBOTTLEAMOUNT];
+            returnNumber = [NSNumber numberWithLong:0];
             
-        } else
+        } else if(ounces > 24)
+        {
+            NSLog(@"something else!");
+            returnNumber = [NSNumber numberWithLong:0];
+        }
+        else
         {
             //this means ounces = bottleAmount
             NSLog(@"user did not drink or fill up the bottle");
+            returnNumber = [NSNumber numberWithLong:0];
         }
     }
     //now update defaults!
     [self.defaults synchronize];
+    NSLog(@"BOTTLE AMT %d", [self.bottleAmount intValue]);
+    return returnNumber;
     
     
 }

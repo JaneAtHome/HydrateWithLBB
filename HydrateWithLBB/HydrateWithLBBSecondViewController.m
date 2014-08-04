@@ -9,8 +9,11 @@
 #import "HydrateWithLBBSecondViewController.h"
 #import "AppMessages.h"
 #import "DailyIntakeLBB.h"
+#import "PTDBean+Protected.h"
+#import "PTDBeanManager+Protected.h"
 
 @interface HydrateWithLBBSecondViewController ()
+@property (strong, nonatomic) CBPeripheral *theBeanPeripheral;
 
 @end
 
@@ -35,11 +38,14 @@
     // to receive bean info
     self.beanManager = [[PTDBeanManager alloc] initWithDelegate:self];
     
+    
     self.beanManager.delegate = self;
 
 
     self.incomingLabel.text = @"start";
     [self updateScratch];
+    
+    
     
 }
 
@@ -103,11 +109,15 @@
     }
     
     //Connect ONLY to the one called Bottle with the uuid below
-   // NSUUID *theUUID = [[NSUUID alloc]initWithUUIDString:@"8604DA9A-0821-6772-44A2-5C777969EF96"];
-    NSUUID *theUUID = [[NSUUID alloc]initWithUUIDString:@"61AA0A7B-519D-BE6C-39db-9efd30684c40"];
+    NSUUID *theUUID = [[NSUUID alloc]initWithUUIDString:@"8604DA9A-0821-6772-44A2-5C777969EF96"];
+    //NSUUID *theUUID = [[NSUUID alloc]initWithUUIDString:@"61AA0A7B-519D-BE6C-39db-9efd30684c40"];
     self.theBean = [self.beans objectForKey:theUUID];
     self.theBean.delegate = self;
     [self.beanManager connectToBean:self.theBean error:nil];
+    
+    //get the peripheral (that is already connected)
+    self.theBeanPeripheral = [self.theBean peripheral];
+    
     
 }
 - (void)BeanManager:(PTDBeanManager*)beanManager didConnectToBean:(PTDBean*)bean error:(NSError*)error{
@@ -130,6 +140,9 @@
         return;
     }
     
+    //[self.theBeanPeripheral discoverServices:@[[CBUUID UUIDWithString:@"a495ff20-c5b1-4b44-b512-1370f02-d74de"]]];
+    
+    
 }
 
 - (void)BeanManager:(PTDBeanManager*)beanManager didDisconnectBean:(PTDBean*)bean error:(NSError*)error{
@@ -151,14 +164,7 @@
     [self.beanManager stopScanningForBeans_error:nil];
 }
 
--(void)bean:(PTDBean *)bean didUpdateTemperature:(NSNumber *)degrees_celsius
-{
-    NSLog(@"temperature updated");
-    self.temp = [[NSNumber alloc]init];
-    self.temp = degrees_celsius;
-    self.incomingLabel = self.temp;
-    
-}
+
 
 -(void)beanDidUpdateBatteryVoltage:(PTDBean *)bean error:(NSError *)error
 {
@@ -182,13 +188,21 @@
     NSData *theByte = [data subdataWithRange:range];
     self.incomingLabel.text = [NSString stringWithFormat:@"%d",((uint8_t *)[theByte bytes])[0]];
     
-    [[DailyIntakeLBB sharedDailyIntake] inputFromSensor:((uint8_t *)[theByte bytes])[0]];
+    NSNumber *v = [[DailyIntakeLBB sharedDailyIntake] inputFromSensor:((uint8_t *)[theByte bytes])[0]];
+  
+    [self.theBean setScratchNumber:2 withValue:[NSData dataWithBytes:&v length:1]];
+    
     
     
     NSString *str = [NSString stringWithFormat:@"%d",((uint8_t *)[theByte bytes])[0]];
     //NSString* str = [NSString stringWithUTF8String:[theByte bytes]];
     NSString *msg = [NSString stringWithFormat:@"received scratch number:%@ scratch:%@", number, str];
     PTDLog(@"%@", msg);
+    
+    
+    //[self.theBean peripheral:self.theBean didDiscoverServices:@[[CBUUID UUIDWithString:@"A495ff20-c5b1-4b44-b512-1370f02d74de"]]];
+    //[self.theBean peripheral:self.theBean didDiscoverCharacteristicsForService:nil error:nil];
+    //[self.theBeanPeripheral setNotifyValue:YES forCharacteristic:@[[CBUUID @"a495ff21-c5b1-4b44-b512-1370f02d74de"]];
 }
 
 

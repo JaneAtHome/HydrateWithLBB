@@ -29,7 +29,7 @@
 -(void)incrementIntake:(int)cumulativeOunces by:(int)ounces;
 
 //when the sensor sends values, figure out if we should increment intake and by how much
--(void)inputFromSensor:(int)ounces;
+-(NSNumber*)inputFromSensor:(int)ounces;
 
 #define LASTDRINKDATE        @"storedDrinkDate"
 #define LASTDRINKAMOUNT         @"storedDrinkAmount"

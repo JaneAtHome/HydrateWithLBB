@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HydrateWithLBB/HydrateWithLBBSecondViewController.m"
-            timestampString = "428377846.695064"
+            timestampString = "428436428.467765"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "144"
-            endingLineNumber = "144"
+            startingLineNumber = "157"
+            endingLineNumber = "157"
             landmarkName = "-BeanManager:didDisconnectBean:error:"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HydrateWithLBB/DailyIntakeLBB.m"
-            timestampString = "428377846.695064"
+            timestampString = "428448804.626996"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "165"
-            endingLineNumber = "165"
+            startingLineNumber = "168"
+            endingLineNumber = "168"
             landmarkName = "-inputFromSensor:"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HydrateWithLBB/DailyIntakeLBB.m"
-            timestampString = "428377846.695064"
+            timestampString = "428448804.626996"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "181"
-            endingLineNumber = "181"
+            startingLineNumber = "192"
+            endingLineNumber = "192"
             landmarkName = "-inputFromSensor:"
             landmarkType = "5">
          </BreakpointContent>
@@ -57,13 +57,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "HydrateWithLBB/HydrateWithLBBFirstViewController.m"
-            timestampString = "428378615.691103"
+            filePath = "HydrateWithLBB/HydrateWithLBBSecondViewController.m"
+            timestampString = "428439743.215444"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "-viewDidLoad"
+            startingLineNumber = "193"
+            endingLineNumber = "193"
+            landmarkName = "-bean:didUpdateScratchNumber:withValue:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -73,13 +73,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "HydrateWithLBB/HydrateWithLBBFirstViewController.m"
-            timestampString = "428379254.970633"
+            filePath = "HydrateWithLBB/DailyIntakeLBB.m"
+            timestampString = "428441765.627867"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "-viewDidLoad"
+            startingLineNumber = "160"
+            endingLineNumber = "160"
+            landmarkName = "-inputFromSensor:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
