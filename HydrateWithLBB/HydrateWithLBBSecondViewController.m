@@ -14,6 +14,7 @@
 
 @interface HydrateWithLBBSecondViewController ()
 @property (strong, nonatomic) CBPeripheral *theBeanPeripheral;
+@property   (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
 @end
 
@@ -28,7 +29,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    DailyIntakeLBB *sharedDailyIntake = [DailyIntakeLBB sharedDailyIntake];
+    //DailyIntakeLBB *mysharedDailyIntake = [DailyIntakeLBB sharedDailyIntake];
     
     self.title = @"Details";
     
@@ -95,8 +96,7 @@
     
     //LIST out all beans names that we detect
     NSArray *allBeansArray = [self.beans allValues];
-    NSArray *allKeys = [self.beans allKeys];
-    for (int x = 0; x< allBeansArray.count; x++) {
+        for (int x = 0; x< allBeansArray.count; x++) {
         PTDBean *aBean = allBeansArray[x];
         beanNames = [beanNames stringByAppendingString:aBean.name];
         beanNames = [beanNames stringByAppendingString:@". "];
@@ -109,8 +109,9 @@
     }
     
     //Connect ONLY to the one called Bottle with the uuid below
-    NSUUID *theUUID = [[NSUUID alloc]initWithUUIDString:@"8604DA9A-0821-6772-44A2-5C777969EF96"];
+    //NSUUID *theUUID = [[NSUUID alloc]initWithUUIDString:@"8604DA9A-0821-6772-44A2-5C777969EF96"];
     //NSUUID *theUUID = [[NSUUID alloc]initWithUUIDString:@"61AA0A7B-519D-BE6C-39db-9efd30684c40"];
+    NSUUID *theUUID = [[NSUUID alloc]initWithUUIDString:@"0d92f61c-e0b8-d3fb-99b4-7f5d5f04e6bb"];
     self.theBean = [self.beans objectForKey:theUUID];
     self.theBean.delegate = self;
     [self.beanManager connectToBean:self.theBean error:nil];
@@ -134,13 +135,11 @@
 
     [self.beanManager stopScanningForBeans_error:&error];
     if (error) {
-        //UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:[error localizedDescription] delegate:nil cancelButtonTitle:nil otherButtonTitles:@"Ok", nil];
-        //[alert show];
+
         NSLog(@"stopped scanning for beans");
         return;
     }
-    
-    //[self.theBeanPeripheral discoverServices:@[[CBUUID UUIDWithString:@"a495ff20-c5b1-4b44-b512-1370f02-d74de"]]];
+
     
     
 }
@@ -198,15 +197,12 @@
     //NSString* str = [NSString stringWithUTF8String:[theByte bytes]];
     NSString *msg = [NSString stringWithFormat:@"received scratch number:%@ scratch:%@", number, str];
     PTDLog(@"%@", msg);
-    
-    
-    //[self.theBean peripheral:self.theBean didDiscoverServices:@[[CBUUID UUIDWithString:@"A495ff20-c5b1-4b44-b512-1370f02d74de"]]];
-    //[self.theBean peripheral:self.theBean didDiscoverCharacteristicsForService:nil error:nil];
-    //[self.theBeanPeripheral setNotifyValue:YES forCharacteristic:@[[CBUUID @"a495ff21-c5b1-4b44-b512-1370f02d74de"]];
+
 }
 
 
--(void)updateScratch
+
+ -(void)updateScratch
 {
     //get the temperature
     
@@ -217,6 +213,7 @@
     
  
 }
+
 
 
 @end

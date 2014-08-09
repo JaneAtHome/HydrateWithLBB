@@ -43,6 +43,10 @@
 		B6A67EA019833C1E00F1FA9C /* HydrateWithLBB-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6A67E9F19833C1E00F1FA9C /* HydrateWithLBB-Info.plist */; };
 		B6A67EA319833CC200F1FA9C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6A67EA519833CC200F1FA9C /* InfoPlist.strings */; };
 		B6A680851988104900F1FA9C /* DailyIntakeLBB.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A680841988104900F1FA9C /* DailyIntakeLBB.m */; };
+		B6B63F491993FAEB00DD604D /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B63F481993FAEB00DD604D /* MyTableViewController.m */; };
+		B6B63F4C1994472200DD604D /* DrinkRecord.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B6B63F4A1994472200DD604D /* DrinkRecord.xcdatamodeld */; };
+		B6B63F4F1994659C00DD604D /* DailyDrinkSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B63F4E1994659C00DD604D /* DailyDrinkSummary.m */; };
+		B6B63F52199467A700DD604D /* DailyDrinkSummary+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B63F51199467A700DD604D /* DailyDrinkSummary+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +131,13 @@
 		B6A67EA419833CC200F1FA9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B6A680831988104900F1FA9C /* DailyIntakeLBB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DailyIntakeLBB.h; path = HydrateWithLBB/DailyIntakeLBB.h; sourceTree = "<group>"; };
 		B6A680841988104900F1FA9C /* DailyIntakeLBB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DailyIntakeLBB.m; path = HydrateWithLBB/DailyIntakeLBB.m; sourceTree = "<group>"; };
+		B6B63F471993FAEB00DD604D /* MyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyTableViewController.h; path = HydrateWithLBB/MyTableViewController.h; sourceTree = "<group>"; };
+		B6B63F481993FAEB00DD604D /* MyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyTableViewController.m; path = HydrateWithLBB/MyTableViewController.m; sourceTree = "<group>"; };
+		B6B63F4B1994472200DD604D /* DrinkRecord.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DrinkRecord.xcdatamodel; sourceTree = "<group>"; };
+		B6B63F4D1994659C00DD604D /* DailyDrinkSummary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyDrinkSummary.h; sourceTree = "<group>"; };
+		B6B63F4E1994659C00DD604D /* DailyDrinkSummary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailyDrinkSummary.m; sourceTree = "<group>"; };
+		B6B63F50199467A700DD604D /* DailyDrinkSummary+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DailyDrinkSummary+Extension.h"; sourceTree = "<group>"; };
+		B6B63F51199467A700DD604D /* DailyDrinkSummary+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DailyDrinkSummary+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -377,6 +388,13 @@
 		B6A67E8619833A8300F1FA9C /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				B6B63F471993FAEB00DD604D /* MyTableViewController.h */,
+				B6B63F481993FAEB00DD604D /* MyTableViewController.m */,
+				B6B63F4A1994472200DD604D /* DrinkRecord.xcdatamodeld */,
+				B6B63F4D1994659C00DD604D /* DailyDrinkSummary.h */,
+				B6B63F4E1994659C00DD604D /* DailyDrinkSummary.m */,
+				B6B63F50199467A700DD604D /* DailyDrinkSummary+Extension.h */,
+				B6B63F51199467A700DD604D /* DailyDrinkSummary+Extension.m */,
 				B6A67E8919833AD300F1FA9C /* HydrateWithLBB-Prefix.pch */,
 				B6A67E8A19833AD300F1FA9C /* HydrateWithLBBAppDelegate.h */,
 				B6A67E8B19833AD300F1FA9C /* HydrateWithLBBAppDelegate.m */,
@@ -493,6 +511,7 @@
 				B6A67E8019833A2900F1FA9C /* OadProfile.m in Sources */,
 				B6A67E7619833A2900F1FA9C /* PTDBEAN_Helper.m in Sources */,
 				B6A67E7119833A2900F1FA9C /* AppMessagingLayer.m in Sources */,
+				B6B63F491993FAEB00DD604D /* MyTableViewController.m in Sources */,
 				B6A680851988104900F1FA9C /* DailyIntakeLBB.m in Sources */,
 				B6A67E7A19833A2900F1FA9C /* GattSerialProfile.m in Sources */,
 				B6A67E8319833A2900F1FA9C /* PTDBeanManager.m in Sources */,
@@ -504,6 +523,7 @@
 				B6A67E7819833A2900F1FA9C /* BleProfile.m in Sources */,
 				B6A67E7919833A2900F1FA9C /* DevInfoProfile.m in Sources */,
 				B6A67E7C19833A2900F1FA9C /* GattSerialMessage.m in Sources */,
+				B6B63F4F1994659C00DD604D /* DailyDrinkSummary.m in Sources */,
 				B6A67E7E19833A2900F1FA9C /* GattSerialTransport.m in Sources */,
 				B6A67E7219833A2900F1FA9C /* CBPeripheral+isConnected_Universal.m in Sources */,
 				B6A67E8419833A2900F1FA9C /* PTDBeanRadioConfig.m in Sources */,
@@ -514,6 +534,8 @@
 				B6A67E7719833A2900F1FA9C /* BatteryProfile.m in Sources */,
 				B6A67E7B19833A2900F1FA9C /* GattPacket.m in Sources */,
 				B6A67E9619833B4300F1FA9C /* main.m in Sources */,
+				B6B63F52199467A700DD604D /* DailyDrinkSummary+Extension.m in Sources */,
+				B6B63F4C1994472200DD604D /* DrinkRecord.xcdatamodeld in Sources */,
 				B6A67E7F19833A2900F1FA9C /* GattTransport.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -735,6 +757,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B6B63F4A1994472200DD604D /* DrinkRecord.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B6B63F4B1994472200DD604D /* DrinkRecord.xcdatamodel */,
+			);
+			currentVersion = B6B63F4B1994472200DD604D /* DrinkRecord.xcdatamodel */;
+			path = DrinkRecord.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B6A67C67198314DD00F1FA9C /* Project object */;
 }

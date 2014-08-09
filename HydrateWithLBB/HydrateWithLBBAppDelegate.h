@@ -8,8 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface HydrateWithLBBAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+
+
+
+-(void)saveContext;
+
+-(NSURL *)applicationDocumentsDirectory;
 
 @end

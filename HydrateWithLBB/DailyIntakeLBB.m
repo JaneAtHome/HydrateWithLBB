@@ -76,7 +76,7 @@ create NSUSerDefaults fields for
         NSString *storedDateString = [formatter stringFromDate:storedDate];
         NSString *currentDateString = [formatter stringFromDate:[NSDate date]];
         
-        NSLog(storedDateString);
+        NSLog(@"%@", storedDateString);
         
         if ([storedDateString isEqualToString:currentDateString]) {
             self.todaysDate = storedDate;

@@ -17,6 +17,7 @@
 @implementation HydrateWithLBBFirstViewController
 
 //@synthesize dailyIntake = _dailyIntake;
+static void *singletonModelKVOContext = & singletonModelKVOContext;
 
 - (void)viewDidLoad
 {
@@ -43,12 +44,27 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    // the next vc grabs the delegate to receive callbacks
-    // when the view appears , we want to grab them back.
-    //update the drink label from the model
+    
+    [[DailyIntakeLBB sharedDailyIntake]addObserver:self forKeyPath:@"numOunces" options:0 context:singletonModelKVOContext];
+
+    
+}
+
+-(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+    if (context == singletonModelKVOContext) {
+        
+        [self updateViewsFromModel];
+    }
+    else
+    {
+        [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
+    }
+}
+
+-(void)updateViewsFromModel
+{
     self.drinkAmtLabel.text = [[[DailyIntakeLBB sharedDailyIntake] numOunces] stringValue];
-    
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -77,5 +93,9 @@
     [self performSelector:@selector(updateTime) withObject:self afterDelay:1.0];
 }
 
+-(void)dealloc
+{
+    [[DailyIntakeLBB sharedDailyIntake] removeObserver:self forKeyPath:@"numOunces" context:singletonModelKVOContext];
+}
 
 @end

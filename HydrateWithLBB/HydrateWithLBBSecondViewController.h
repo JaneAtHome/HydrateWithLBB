@@ -22,4 +22,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *connectionStatus;
 @property (weak, nonatomic) IBOutlet UILabel *incomingLabel;
 
+
+
 @end

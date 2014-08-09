@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13E28" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="DailyDrinkSummary" representedClassName="DailyDrinkSummary" syncable="YES">
+        <attribute name="amount" attributeType="Integer 32" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="date" attributeType="Date" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="DailyDrinkSummary" positionX="-1674" positionY="-99" width="128" height="73"/>
+    </elements>
+</model>
