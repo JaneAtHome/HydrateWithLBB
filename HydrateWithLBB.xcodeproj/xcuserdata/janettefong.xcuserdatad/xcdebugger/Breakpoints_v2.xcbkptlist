@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HydrateWithLBB/HydrateWithLBBSecondViewController.m"
-            timestampString = "428996969.596393"
+            timestampString = "429299679.02591"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "156"
-            endingLineNumber = "156"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
             landmarkName = "-BeanManager:didDisconnectBean:error:"
             landmarkType = "5">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HydrateWithLBB/HydrateWithLBBSecondViewController.m"
-            timestampString = "428996969.596393"
+            timestampString = "429299679.02591"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "192"
-            endingLineNumber = "192"
+            startingLineNumber = "180"
+            endingLineNumber = "180"
             landmarkName = "-bean:didUpdateScratchNumber:withValue:"
             landmarkType = "5">
          </BreakpointContent>
@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HydrateWithLBB/HydrateWithLBBSecondViewController.m"
-            timestampString = "428996969.596393"
+            timestampString = "429299679.02591"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "172"
-            endingLineNumber = "172"
+            startingLineNumber = "160"
+            endingLineNumber = "160"
             landmarkName = "-beanDidUpdateBatteryVoltage:error:"
             landmarkType = "5">
          </BreakpointContent>

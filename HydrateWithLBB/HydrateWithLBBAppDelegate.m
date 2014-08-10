@@ -77,14 +77,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Fetch Main Storyboard
-    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"first" bundle: nil];
+    /*UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
     
     // Instantiate Root Navigation Controller
     UITabBarController *rootTabBarController = (UITabBarController *)[mainStoryboard instantiateViewControllerWithIdentifier:@"rootTabBarController"];
     //UINavigationController *rootTabBarController = (UINavigationController *)[mainStoryboard instantiateViewControllerWithIdentifier:@"rootTabBarController"];
     
     // Configure View Controller
-    MyTableViewController *viewController = (MyTableViewController *)[[rootTabBarController viewControllers].lastObject];
+    MyTableViewController *viewController = (MyTableViewController *)[[rootTabBarController viewControllers] lastObject];
     
     if ([viewController isKindOfClass:[MyTableViewController class]]) {
         [viewController setManagedObjectContext:self.managedObjectContext];
@@ -92,8 +92,9 @@
     
     // Configure Window
     [self.window setRootViewController:rootTabBarController];
-    
+    */
     return YES;
+     
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

@@ -50,19 +50,7 @@
     
 }
 
-/*
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    // the next vc grabs the delegate to receive callbacks
-    // when the view appears , we want to grab them back.
-    self.beanManager.delegate = self;
-    
-    [self.theBean readTemperature];
-    self.incomingLabel.text = [self.temp stringValue];
 
-    
-}
-*/
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

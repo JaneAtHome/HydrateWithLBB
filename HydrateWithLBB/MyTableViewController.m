@@ -7,7 +7,7 @@
 //
 
 #import "MyTableViewController.h"
-#import <UITableViewCell.h>
+
 
 @interface MyTableViewController () <NSFetchedResultsControllerDelegate>
 @property (strong, nonatomic) NSDictionary *drinkRecords;
@@ -126,8 +126,8 @@
     NSManagedObject *record = [self.fetchedResultsController objectAtIndexPath:indexPath];
     
     // Update Cell
-    [self.drinkDateLabel setText:[record valueForKey:@"date"]];
-    [self.drinkAmountLabel setText:[record valueForKey:@"amount"]];
+    //[self.drinkDateLabel setText:[record valueForKey:@"date"]];
+    //[self.drinkAmountLabel setText:[record valueForKey:@"amount"]];
 }
 
 /*

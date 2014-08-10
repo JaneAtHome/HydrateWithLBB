@@ -10,9 +10,7 @@
 #import <CoreData/CoreData.h>
 
 @interface MyTableViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
-@property (weak, nonatomic) IBOutlet UILabel *drinkAmountLabel;
 
-@property (weak, nonatomic) IBOutlet UILabel *drinkDateLabel;
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
